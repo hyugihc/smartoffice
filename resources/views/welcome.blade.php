@@ -67,28 +67,27 @@
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-            <div class="top-right links">
-                @if (Auth::check())
-                <a href="{{ url('/home') }}">Home</a>
-                @else
-                <a href="{{ url('/login') }}" data-toggle="tooltip" title="Login dahulu sebelum masuk sistem">Login</a>
-                <a href="{{ url('/register') }}" data-toggle="tooltip" title="Register jika belum punya akun">Register</a>
-                <a href="{{ url('/cek') }}" data-toggle="tooltip" title="cek saja">cek</a>
-                @endif
-            </div>
+                <div class="top-right links">
+                    @if (Auth::check())
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
+                    @endif
+                </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    SmartOffice
+                    Laravel
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs" data-toggle="tooltip" title="Link belum berfungsi">Surat Masuk</a>
-                    <a href="https://laracasts.com" data-toggle="tooltip" title="Link belum berfungsi">Surat Keluar</a>
-                    <a href="https://laravel-news.com" data-toggle="tooltip" title="Link belum berfungsi">Surat Tugas</a>
-                    <a href="https://forge.laravel.com" data-toggle="tooltip" title="Link belum berfungsi">Analisis Beban Tugas</a>
-                    <a href="https://github.com/laravel/laravel" data-toggle="tooltip" title="Link belum berfungsi">CKP Pegawai</a>
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
